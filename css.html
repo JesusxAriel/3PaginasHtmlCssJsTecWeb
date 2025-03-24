@@ -1,19 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--Codificacion de carracteres-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document CSS</title>
+    <!--link rel="stylesheet" href="" -->
+    <link rel="stylesheet" href="CSS/estilos1.css">
+    <title>Futbol</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" target="_blank">HTML</a></li>
-            <li><a href="css.html" target="_blank">CSS</a></li>
-            <li><a href="js.html" target="_blank">JS</a></li>
+    <!--Elementos semantico como nav(barra de nav), footer(pie de letra)-->
+    <!--div -> BLOQUE y span ->Bloque AJUSTADO -->
+    <div id="header">
+        <header>
+            <nav>
+               <ul>
+               <li><a href="index.html" target="_blank">HTML</a></li>
+               <li><a href="css.html" target="_blank">CSS</a></li>
+               <li><a href="js.html" target="_blank">JS</a></li>
+               
+               </ul>
+           
+           </nav>
+           <h1>Futbol</h1>
+       </header>
+    </div>
+    
+    <div id="aside-left">
+        <div class="barca-image">
+            <img 
+    src="IMG/Barcelona.webp" 
+    alt="FC Barcelona" 
+    style="width: 4cm; height: 4cm; object-fit: cover;">
+        </div>
+        <div class="barca-info">
+            <h2>FC Barcelona - Datos Generales</h2>
             
-        </ul>
+            <ul class="barca-data">
+                <li>Fundación: 1899</li>
+                <li>Estadio: Spotify Camp Nou (~99,354 espectadores)</li>
+                <li>Presidente: Joan Laporta (2021-actualidad)</li>
+                <li>Liga: LaLiga EA Sports</li>
+                <li>Rivalidad: Real Madrid (El Clásico)</li>
+            </ul>
+             
+            <h3>Palmarés (Títulos Principales)</h3>
+            
+            <ul class="barca-titles">
+                <li>Champions League: 5</li>
+                <li>LaLiga: 27</li>
+                <li>Copa del Rey: 31</li>
+                <li>Mundial de Clubes: 3</li>
+            </ul>
+    
+            <h3>Jugadores Históricos</h3>
+            
+            <ul class="barca-legends">
+                <li>Leyendas: Lionel Messi, Johan Cruyff, Ronaldinho,<br> Xavi, Iniesta, Puyol, Kubala</li>
+                <li>Actuales estrellas: Robert Lewandowski, Pedri,<br> Gavi, Frenkie de Jong, Lamine Yamal</li>
+            </ul>
+    
+            <h3>Datos Curiosos</h3>
+            
+            <ul class="barca-facts">
+                <li>Más goles en la historia: Lionel Messi (672 goles)</li>
+                <li>Más partidos disputados: Messi (778)</li>
+                <li>Cantera (La Masia): Formó a Messi, Xavi, Iniesta <br> y Guardiola</li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="article">
+            <img src="IMG/grada_cule.webp" 
+            alt="FC Barcelona" 
+            style="
+             width: 17cm;
+             height: 8cm;
+             object-fit: cover;
+             margin: 10px 0;
+             border: 1px solid #a50044;
+             border-radius: 4px;
+         ">
+            <div id="section-1">
+                <p>El FC Barcelona no sería el mismo sin Lionel Messi, y Messi no sería Messi sin el Barça. Su conexión trasciende lo deportivo: es un <span style="background-color: blueviolet; color: black;">amor de infancia</span> que se convirtió en leyenda. Juntos escribieron la historia más gloriosa: 672 goles, 35 títulos, y esa magia de <span style="background-color: blueviolet; color: black;">La Pulga</span> esquivando rivales como si el Camp Nou fuera su patio. Cuando se fue en 2021, no solo perdimos a nuestro 10; perdimos un pedazo del alma culé. Pero su legado sigue vivo: esos goles al Madrid, los remontados épicos, y esa Champions del 2015 donde humilló al fútbol moderno. Messi es el espejo donde todo niño de La Masia quiere reflejarse.</p>
+            </div>
+            <div id="section-2">
+                <p>Ser culé no es una elección, es un <span style="background-color: blueviolet; color: black;">estado del alma</span>. Desde que tengo memoria, cada partido es un latido. Cuando perdemos con el Bayern o el PSG en Champions, siento el dolor como una puñalada. Pero cuando Gavi mete ese pase milimétrico o Lamine Yamal hace vibrar la grada, <span style="background-color: blueviolet; color: black;">vuelvo a creer</span>. La Liga del 2023 me hizo llorar como un niño: era la victoria de los que seguimos aquí en las malas. Messi, Xavi, Iniesta... son mis héroes no por sus balones de oro, sino porque enseñaron que el fútbol puede ser poesía. Hoy, cuando el equipo sale al campo, sigo ahí: con el corazón en la mano, gritando cada gol como si fuera el último. Porque el Barça no es un club, es <span style="background-color: blueviolet; color: black;">la familia que elegí</span>.</p>
+            </div>
+        </div>
+    </div>
+    <div id="aside-rigth">
+        <div id="aside-right">
+            <!-- Próximos Partidos Destacados -->
+            <div class="aside-section">
+                <h3>⚽ Próximos Partidos Clave</h3>
+                <ul class="aside-list">
+                    <li><strong>Champions League</strong><br>Barça vs Borussia Dormund<br><span class="match-date">9 Abr 2025</span></li>
+                    <li><strong>El Clásico</strong><br>Barça vs Real Madrid<br><span class="match-date">11 May 2025</span></li>
+                    <li><strong>Copa del Rey</strong><br>Barça vs Atletico de Madrid<br><span class="match-date">2 Abr 2025</span></li>
+                </ul>
+            </div>
         
-    </nav>
+            <!-- Frase Icónica -->
+            <div class="aside-section" style="background-color: red; padding: 10px; border-radius: 8px;">
+                <h3>⚽ Frase Iconica</h3>
+                <blockquote class="barca-quote">
+                    "El Barça no es solo un club de fútbol, es un sentimiento que late en millones de corazones."
+                    <footer class="quote-author">— Joan Gamper (Fundador)</footer>
+                </blockquote>
+            </div>
+        
+            <!-- Redes Sociales -->
+            <div class="aside-section">
+                <h3>🔵🔴 Síguenos</h3>
+                <div class="social-media">
+                    <a href="https://twitter.com/FCBarcelona" target="_blank">
+                        <img src="IMG/x.webp" alt="Twitter" width="32" style="margin-right: 10px;">
+                    </a>
+                    <a href="https://instagram.com/fcbarcelona" target="_blank">
+                        <img src="IMG/ins.webp" alt="Instagram" width="32" style="margin-right: 10px;">
+                    </a>
+                    <a href="https://youtube.com/FCBarcelona" target="_blank">
+                        <img src="IMG/yt.webp" alt="YouTube" width="32">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>2018, UCB</footer>
+    </div>
+
 </body>
 </html>
